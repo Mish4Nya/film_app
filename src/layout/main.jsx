@@ -6,6 +6,7 @@ import {Preloader} from '../components/preloader';
 
 
 
+const link = "http://www.omdbapi.com/?i=tt3896198&apikey=51e96c54"
 
 class Main extends React.Component {
     state = {
@@ -13,7 +14,7 @@ class Main extends React.Component {
         loading: true,
     };
 componentDidMount() {
-    fetch('http://www.omdbapi.com/?apikey=4aa76a8c&s=love')
+    fetch('http://www.omdbapi.com/?apikey=4aa76a8c&s=comedy')
         .then((response) => response.json ())
         .then((data)=> this.setState({movies: data.Search, loading: false}));
 }

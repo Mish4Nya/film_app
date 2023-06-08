@@ -1,5 +1,5 @@
 function Header(){
-    return <nav className="teal darken-2">
+    return <nav className="deep-purple accent-2">
         <div className="container">
                 <div className="nav-wrapper">
                     <a href="!#" className="brand-logo">React Movies</a>
